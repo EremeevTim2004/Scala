@@ -1,11 +1,12 @@
+.trunk/
+.vscode/
 .idea/
+
 .bsp/
 target/
 
 .scala-build/
 .metals/
 .bloop/
-project/
 
-./.trunk/
-./.vscode/
+project/
