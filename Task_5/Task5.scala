@@ -75,6 +75,7 @@ import scala.util.*
   println(insertionSort(intList)) // Вывод: List(1, 1, 3, 4, 5, 9)
   println(insertionSort(doubleList)) // Вывод: List(1.414, 2.718, 3.14)
   println(insertionSort(stringList)) // Вывод: List(apple, banana, cherry)
+
   println("TASK2")
   println(kthStatistic(4, List(3, 8, 1, 12, 23)))
   println(kthStatistic(3, List(4, 7, 6, 5, 12, 9, 5)))
@@ -82,6 +83,7 @@ import scala.util.*
   println(kthStatistic(1, intList))
   println(kthStatistic(2, doubleList))
   println(kthStatistic[String](3, stringList))
+
   println("TASK3")
   val primes = primeFrom(1).takeWhile(_ <= 100).force
   println(primes)

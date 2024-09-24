@@ -69,22 +69,27 @@ import scala.util.*
   println(weightChips(90, 0.9, 0.1)) // Вывод: 10.00
   println(weightChips(100, 0.85, 0.1)) // Вывод: 16.67
   println(weightChips(10000000000L, 0.9, 0.05)) // Вывод: 1052631578.95
+
   println("TASK1b")
   println(weightChipsC(90)) // Вывод: 10.00
   println(weightChipsC(100)(0.85)) // Вывод: 16.67
   println(weightChipsC(10000000000L)(0.9)(0.05)) // Вывод: 1052631578.95
+
   println("TASK1c")
   println(weightChipsC1(90)) // Вывод: 10.00
   println(weightChipsC1(100)(0.85)) // Вывод: 16.67
   println(weightChipsC1(10000000000L)(0.9)(0.05)) // Вывод: 1052631578.95
+
   println("TASK2a")
   println(strToColDigits("123asd12jf4)"))
   println(strToSumDigits("123asd12jf4)"))
   println(strToColAlpha("123asd12jf4)"))
+
   println("TASK2bc")
   println(compareString(strToColDigits)("sd12", "f5sf"))
   println(compareString(strToSumDigits)("12sd", "f3sf"))
   println(compareString(strToColAlpha)("fsr5g43f", "fsrgg43f"))
+  
   println("TASK3")
   try {
     println(calculateExpression("-1 + 2")) // Вывод: 3.0
