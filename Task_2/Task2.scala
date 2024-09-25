@@ -112,13 +112,14 @@ import scala.util.matching.Regex
   val hasUppercase = ".*[A-Z].*".r
   val hasLowercase = ".*[a-z].*".r
   val hasDigit = ".*[0-9].*".r
-  val hasSpecialChar = ".*[!@#$%^&*()].*".r
+  val hasSpecialChar = ".*[!$^&*()].*".r
   val hasEightChars = ".{8,}".r
+  val hasForbiden = ".*[?#<>%@/].*".r
   val input = readLine("Введите пароль: ")
 
   val boolPass = hasUppercase.matches(input) && hasLowercase.matches(input) &&
     hasDigit.matches(input) && hasSpecialChar.matches(input) && hasEightChars
-      .matches(input)
+      .matches(input) && !hasForbiden.matches(input)
 
   if (boolPass) println("Да")
   else println("Нет")
